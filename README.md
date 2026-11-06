@@ -38,7 +38,9 @@ Automated checks cover navigation, live search, copying, and companion-window be
 
 ## Miami Course List Lightweight
 
-[Download Miami Course List Lightweight v1.8.2](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Miami_Course_List_Lightweight_v1_8_2.zip)
+[Download Miami Course List Lightweight v1.9.0](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Miami_Course_List_Lightweight_v1_9_0.zip)
+
+**New in v1.9.0:** A visual Monday–Friday schedule with 30-minute calendar lines (8 AM–9 PM), color-coded course blocks, date-aware conflict indicators, and asynchronous/TBA classes listed below the calendar. Use **Expand width** to see all five weekdays in a wider docked panel without covering the page. Existing saved presets and exported schedule behavior are preserved.
 
 Chrome/Edge extension for [Miami University's Course List](https://www.apps.miamioh.edu/courselist/). Adds a docked and collapsible side panel for saved search filters, built-in major/minor and modality selections, course-row checkboxes, and Excel/CSV/PDF exports.
 
@@ -52,5 +54,7 @@ Chrome/Edge extension for [Miami University's Course List](https://www.apps.miam
 4. Open or refresh the Course List website.
 
 To update without losing presets, **replace the files in your currently loaded extension folder**, then reload the extension on the Extensions page. You may also export a preset backup first. Detailed instructions and feature documentation are inside the ZIP's `README.md`.
+
+[Previous version v1.8.2](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Miami_Course_List_Lightweight_v1_8_2.zip)
 
 *Local browser tests passed; the university's live post-search page layout has not yet been verified.*
