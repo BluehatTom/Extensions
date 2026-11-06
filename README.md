@@ -33,3 +33,24 @@ Automated checks cover navigation, live search, copying, and companion-window be
 ### Previous version
 
 [Page Navigator v1.0.0](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Page-Navigator-v1.0.0.zip)
+
+---
+
+## Miami Course List Lightweight
+
+[Download Miami Course List Lightweight v1.8.2](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Miami_Course_List_Lightweight_v1_8_2.zip)
+
+Chrome/Edge extension for [Miami University's Course List](https://www.apps.miamioh.edu/courselist/). Adds a docked and collapsible side panel for saved search filters, built-in major/minor and modality selections, course-row checkboxes, and Excel/CSV/PDF exports.
+
+**Schedule Builder:** Assemble a schedule across multiple searches, using the **far-right results column** for meeting days, times, and calendar dates. It flags potentially conflicting sections when the same days and times overlap within overlapping meeting-date ranges (including sprint courses). Missing meeting dates are marked for verification. Schedule exports clear the draft after a successful save; saved presets remain intact.
+
+### Install or update
+
+1. Download and extract the ZIP above.
+2. Open `chrome://extensions` (or `edge://extensions`), enable **Developer mode**, and choose **Load unpacked**.
+3. Select the extracted `Miami_Course_List_Lightweight` folder containing `manifest.json`.
+4. Open or refresh the Course List website.
+
+To update without losing presets, **replace the files in your currently loaded extension folder**, then reload the extension on the Extensions page. You may also export a preset backup first. Detailed instructions and feature documentation are inside the ZIP's `README.md`.
+
+*Local browser tests passed; the university's live post-search page layout has not yet been verified.*
