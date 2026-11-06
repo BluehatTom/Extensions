@@ -2,37 +2,50 @@
 
 ## Page Navigator
 
-[Download Page Navigator v1.1.0](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Page-Navigator-v1.1.0.zip)
+[Download Page Navigator v1.2.0](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Page-Navigator-v1.2.0.zip)
 
 Navigate long pages with **Top, Middle, and End**, live search as you type, heading navigation, previous-position history, and saved reading spots.
 
-### New in v1.1: ChatGPT companion
+### New in v1.2: page-aware chat sidebar
 
-- **Open ChatGPT** opens a movable, resizable companion window or brings the existing companion forward.
-- **Copy selected text** copies a highlighted passage from the current page.
-- **Copy & open** copies the passage, then opens or focuses ChatGPT. Paste your text, add a question, and send when ready.
-- Assign an optional ChatGPT shortcut at `chrome://extensions/shortcuts`.
+- **Use this page** or **Use selection** to choose the text for a question.
+- Summarize, explain, find sections, or extract details into a table.
+- Review the attached text before sending it.
+- Use answer source buttons to jump to and highlight relevant passages.
+- Keep navigation and live search available beside the conversation.
 
-No API key is required. The companion opens the normal ChatGPT website; sign in there if asked. Page Navigator never submits a message automatically.
+The ZIP contains the extension, a local OpenAI connector, all source files, tests, and a **START-HERE.html** setup guide.
 
-### Install
+### Install or update
 
 1. Download and extract the ZIP.
 2. Open `chrome://extensions` and enable **Developer mode**.
-3. Choose **Load unpacked** and select the extracted `page-navigator` folder containing `manifest.json`.
-4. Pin the extension and refresh your open webpages.
+3. Choose **Load unpacked** and select the `page-navigator` folder containing `manifest.json`.
+4. Pin the extension and refresh your webpages.
 
-### Update from v1.0
+To update without losing settings or reading spots, replace the files in your currently loaded `page-navigator` folder, click **Reload** on the Extensions page, and refresh your webpages. Chrome 116 or later is required.
 
-Replace the files in your existing `page-navigator` folder with the new version. Open `chrome://extensions`, click **Reload** on Page Navigator, and refresh your webpages. Keeping the same installation preserves your settings and saved spots.
+### Activate page chat
 
-The ZIP includes all source files, installation instructions, and automated logic tests. Navigation and search run locally. The copy controls request clipboard-write access, and a narrow ChatGPT host permission supports companion-window reuse. No clipboard-read permission is requested.
+1. Install **Node.js 22 or later** if needed.
+2. Open the included `page-navigator-connector` folder and double-click **START-WINDOWS.cmd** (a Mac/Linux start script is also included).
+3. Enter your **OpenAI API key** in the connector's local setup page.
+4. Copy its separate **connection code** into the Page chat sidebar and choose **Connect**.
 
-Automated checks cover navigation, live search, copying, and companion-window behavior. Real Chrome installation and visual rendering were not tested in the build environment; see `VALIDATION.txt` inside the ZIP for the exact test scope.
+Keep the connector running while chatting. The API key stays in memory and is forgotten when the connector closes; enter it again after restarting, or use an existing `OPENAI_API_KEY` environment configuration. The extension saves only the separate connection code. No API key is included in the download or repository.
 
-### Previous version
+Page chat uses the OpenAI API and needs model access and available API credits. The default model is `gpt-5.4-mini`. Attached text is sent only when you submit a question. Chat transcripts and captured pages are not saved persistently by the extension or connector.
 
-[Page Navigator v1.0.0](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Page-Navigator-v1.0.0.zip)
+### ChatGPT website companion
+
+The separate **Open ChatGPT**, **Copy selected text**, and **Copy & open** controls remain available without an API key. You paste and submit text in the ChatGPT website yourself. Navigation, search, and saved spots also work without the local connector.
+
+Automated checks cover navigation, search, context capture, source jumps, sidebar state, and the local connector's HTTP/API boundary. Real Chrome rendering, native Windows launching, and live OpenAI responses were not verified in the build environment. Exact scope is recorded in `page-navigator/VALIDATION.txt`.
+
+### Previous versions
+
+- [Page Navigator v1.1.0](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Page-Navigator-v1.1.0.zip)
+- [Page Navigator v1.0.0](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Page-Navigator-v1.0.0.zip)
 
 ---
 
