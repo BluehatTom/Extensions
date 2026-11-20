@@ -51,7 +51,9 @@ Automated checks cover navigation, search, context capture, source jumps, sideba
 
 ## Miami Course List Lightweight
 
-[Download Miami Course List Lightweight v1.9.1](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Miami_Course_List_Lightweight_v1_9_1.zip)
+[Download Miami Course List Lightweight v1.10.0](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Miami_Course_List_Lightweight_v1_10_0.zip)
+
+**New in v1.10.0:** Save and load multiple named draft schedules, print the **Monday–Friday visual calendar** to a separate PDF, and see conflict-aware alternative sections from Course List searches viewed in this browser. Exported selected-course and schedule tables now keep **all original columns together on one page wide**, but allow **extra pages vertically for additional rows**. PDF repeats column headings on each page; Excel prints one page wide with automatic height and repeating header rows. Exporting a schedule clears only the working draft; saved named schedules remain available.
 
 **New in v1.9.1:** Give downloaded selected-course, schedule, or preset-backup files a custom filename. Excel and PDF export a **single-page print layout** while preserving the original source columns and selected rows. Excel uses landscape Fit to One Page; PDF creates one landscape page and uses a larger PDF page size for larger selections. CSV retains the complete data but has no print settings. Saved filters and the five-day visual calendar remain available.
 
@@ -70,6 +72,6 @@ Chrome/Edge extension for [Miami University's Course List](https://www.apps.miam
 
 To update without losing presets, **replace the files in your currently loaded extension folder**, then reload the extension on the Extensions page. You may also export a preset backup first. Detailed instructions and feature documentation are inside the ZIP's `README.md`.
 
-[Previous version v1.9.0](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Miami_Course_List_Lightweight_v1_9_0.zip) · [v1.8.2](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Miami_Course_List_Lightweight_v1_8_2.zip)
+[Previous version v1.9.1](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Miami_Course_List_Lightweight_v1_9_1.zip) · [Previous version v1.9.0](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Miami_Course_List_Lightweight_v1_9_0.zip) · [v1.8.2](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Miami_Course_List_Lightweight_v1_8_2.zip)
 
 *Local browser tests passed; the university's live post-search page layout has not yet been verified.*
