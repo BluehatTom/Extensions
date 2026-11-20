@@ -51,7 +51,9 @@ Automated checks cover navigation, search, context capture, source jumps, sideba
 
 ## Miami Course List Lightweight
 
-[Download Miami Course List Lightweight v1.9.0](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Miami_Course_List_Lightweight_v1_9_0.zip)
+[Download Miami Course List Lightweight v1.9.1](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Miami_Course_List_Lightweight_v1_9_1.zip)
+
+**New in v1.9.1:** Give downloaded selected-course, schedule, or preset-backup files a custom filename. Excel and PDF export a **single-page print layout** while preserving the original source columns and selected rows. Excel uses landscape Fit to One Page; PDF creates one landscape page and uses a larger PDF page size for larger selections. CSV retains the complete data but has no print settings. Saved filters and the five-day visual calendar remain available.
 
 **New in v1.9.0:** A visual Monday–Friday schedule with 30-minute calendar lines (8 AM–9 PM), color-coded course blocks, date-aware conflict indicators, and asynchronous/TBA classes listed below the calendar. Use **Expand width** to see all five weekdays in a wider docked panel without covering the page. Existing saved presets and exported schedule behavior are preserved.
 
@@ -68,6 +70,6 @@ Chrome/Edge extension for [Miami University's Course List](https://www.apps.miam
 
 To update without losing presets, **replace the files in your currently loaded extension folder**, then reload the extension on the Extensions page. You may also export a preset backup first. Detailed instructions and feature documentation are inside the ZIP's `README.md`.
 
-[Previous version v1.8.2](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Miami_Course_List_Lightweight_v1_8_2.zip)
+[Previous version v1.9.0](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Miami_Course_List_Lightweight_v1_9_0.zip) · [v1.8.2](https://github.com/BluehatTom/Extensions/raw/refs/heads/main/Miami_Course_List_Lightweight_v1_8_2.zip)
 
 *Local browser tests passed; the university's live post-search page layout has not yet been verified.*
